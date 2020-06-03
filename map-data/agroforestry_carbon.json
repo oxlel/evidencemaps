@@ -2,7 +2,7 @@
     "Name": "Agroforestry carbon stocks or GHGE studies",
     "Description": "Evidence map of all studies, related to carbon stocks or GHGE emissions, on the impacts of integrating woody vegetation with sheep or cattle on livestock productivity, environmental impacts and farm economic viability",
     "PublicationReference": "For help using the tool follow link",
-    "PublicationUrl": "https://github.com/borgstein/agroforestry_mapping/blob/master/Mapping%20Tool%20User%20Guide.pdf",
+    "PublicationUrl": "https://github.com/oxlel/agroforestry_mapping/blob/master/Map%20User%20Guide.pdf",
     "Logos": [
         { "File": "oxlel", 
           "Name": "Oxford Long-Term Ecology Lab", 
@@ -27,12 +27,6 @@
             "Name": "Country",
             "DataType": "string",
             "Description": "Country of each study"
-        },
-        {
-            "Column": "State",
-            "Name": "State",
-            "DataType": "string",
-            "Description": "State of each study - if given"
         },
         {
             "Column": "Year",
