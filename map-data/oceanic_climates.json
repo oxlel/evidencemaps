@@ -1,0 +1,93 @@
+{
+    "Name": "Soil carbon and yield implications of reducing tillage intensity, adopting cover crops, and integrating leys into arable rotations in temperate oceanic climates",
+    "Description": "Evidence map of studies from temperate oceanic climates (Köppen–Geiger climate classification Cfb) that quantify the impact on soil organic carbon and crop yield of reducing tillage intensity, adopting cover crops, or integrating leys into arable systems (Jordon et al., in prep).",
+    "PublicationReference": "",
+    "PublicationUrl": "",
+    "Logos": [
+        { "File": "oxlel", 
+          "Name": "Oxford Long-Term Ecology Lab", 
+          "ExternalUrl": "http://oxlel.zoo.ox.ac.uk" },
+        { "File": "oxford",
+          "Name": "University of Oxford",
+          "ExternalUrl": "http://www.ox.ac.uk/" },
+        { "File": "OXSREV",
+          "Name": "Oxford Systematic Reviews",
+          "ExternalUrl": "https://www.oxsrev.org"},
+        { "File": "BBSRC",
+          "Name": "Biotechnology and Biological Sciences Research Council",
+          "ExternalUrl": "https://bbsrc.ukri.org/"}],
+    "Projection": "standard",
+    "DisplayMode": "cluster",
+    "DisplayUnit": "Intervention",
+    "ClusterDistance": 500, 
+    "MapCentre": [3, 50],
+    "MapZoomLevel": 1,
+    "MaxPieSize": 35,
+    "BaseLayers": [{
+        "File": "world50",
+        "Name": "Land",
+        "Description": "Country boundaries at 50km resolution."
+    }],
+    "Fields": [{
+            "Column": "Intervention",
+            "Name": "Intervention",
+            "DataType": "string",
+            "Description": ""
+        },
+        {
+        "Column": "Data completeness",
+        "Name": "Data Completeness",
+        "DataType": "string",
+        "Description": ""
+         },
+        {
+            "Column": "Year of publication",
+            "Name": "Year of Publication",
+            "DataType": "float",
+            "Unit": "",
+            "Description": ""
+        },
+        {
+        "Column": "Critical Appraisal score",
+        "Name": "Critical Appraisal Score",
+        "DataType": "string",
+        "Unit": "",
+        "Description": ""
+           },
+           {
+           "Column": "Country",
+           "Name": "Country",
+           "DataType": "string",
+           "Unit": "",
+           "Description": ""
+            }
+    ],
+    "DataPalettes": [{
+        "Column": "Intervention",
+        "Palette": [{
+                "Name": "CC, LA",
+                "Hex": "ff0000"
+            },
+            {
+                "Name": "Cover crop (CC)",
+                "Hex": "ffa500"
+            },
+            {
+                "Name": "Ley-arable (LA)",
+                "Hex": "ffff00"
+            },            
+            {
+                "Name": "TI, CC",
+                "Hex": "008000"
+            },
+            {
+                "Name": "TI, CC, LA",
+                "Hex": "0000ff"
+            },
+            {
+                "Name": "Tillage intensity (TI)",
+                "Hex": "4b0082"
+            }
+        ]
+    }]
+}
