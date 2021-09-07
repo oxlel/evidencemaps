@@ -51,7 +51,7 @@
            {
            "Column": "Country",
            "Name": "Country",
-           "DataType": "stgrin",
+           "DataType": "string",
            "Unit": "",
            "Description": ""
             }
