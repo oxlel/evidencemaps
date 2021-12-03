@@ -1,0 +1,122 @@
+{
+    "Name": "Agricultural productivity implications of adopting rotational grazing practices or multispecies leys containing perennial herbs into pastoral systems in temperate oceanic climates",
+    "Description": "Evidence map of studies from temperate oceanic climates (Köppen–Geiger climate classification Cfb) that quantify the impact on agricultural productivity (herbage dry matter, animal daily liveweight gain, milk yield, wool growth and faecal egg counts) of rotational grazing (compared to set stocking) and multispecies or herbal swards (compared to conventional ryegrass-clover leys) into ruminant production systems (Jordon et al., in prep).",
+    "PublicationReference": "",
+    "PublicationUrl": "",
+    "Logos": [
+        { "File": "oxlel", 
+          "Name": "Oxford Long-Term Ecology Lab", 
+          "ExternalUrl": "http://oxlel.zoo.ox.ac.uk" },
+        { "File": "oxford",
+          "Name": "University of Oxford",
+          "ExternalUrl": "http://www.ox.ac.uk/" },
+        { "File": "OXSREV",
+          "Name": "Oxford Systematic Reviews",
+          "ExternalUrl": "http://www.oxsrev.org/" },
+        { "File": "BBSRC",
+          "Name": "Biotechnology & Biological Sciences Research Council",
+          "ExternalUrl": "https://bbsrc.ukri.org/"}],
+    "Projection": "standard",
+    "DisplayMode": "cluster",
+    "DisplayUnit": "Outcomes measured",
+    "ClusterDistance": 500, 
+    "MapCentre": [0, 25],
+    "MapZoomLevel": 1,
+    "MaxPieSize": 35,
+    "BaseLayers": [{
+        "File": "world50",
+        "Name": "Land",
+        "Description": "Country boundaries at 50km resolution."
+    }],
+    "Fields": [{
+            "Column": "Intervention",
+            "Name": "Intervention",
+            "DataType": "string",
+            "Description": ""
+        },
+        {
+            "Column": "Outcomes measured",
+            "Name": "Outcomes Measured",
+            "DataType": "string",
+            "Description": ""
+        },
+        {
+            "Column": "Year of publication",
+            "Name": "Year of Publication",
+            "DataType": "float",
+            "Unit": "",
+            "Description": ""
+        },
+        {
+            "Column": "Study Country",
+            "Name": "Study Country",
+            "DataType": "string"
+        },
+        {
+            "Column": "Study validity (critical appraisal score)",
+            "Name": "Study validity (critical appraisal score)",
+            "DataType": "string",
+            "Description": ""
+        }
+    ],
+    "DataPalettes": [{
+        "Column": "Outcomes measured",
+        "Palette": [{
+                "Name": "Herbage dry matter (HDM)",
+                "Hex": "4e79a7"
+            },
+            {
+                "Name": "Liveweight gain (LWG)",
+                "Hex": "59a14f"
+            },
+            {
+                "Name": "Milk yield (MY)",
+                "Hex": "9c755f"
+            },            
+            {
+                "Name": "Soil organic carbon (SOC)",
+                "Hex": "f28e2b"
+            },
+            {
+                "Name": "Wool growth (WG)",
+                "Hex": "edc948"
+            },
+            {
+                "Name": "LWG, Faecel egg count (FEC)",
+                "Hex": "bab0ac"
+            },
+            {
+                "Name": "HDM, LWG",
+                "Hex": "3e79a7"
+            },
+            {
+                "Name": "HDM, LWG, FEC",
+                "Hex": "2e79a7"
+            },
+            {
+                "Name": "HDM, LWG, MY",
+                "Hex": "5e79a7"
+            },
+            {
+                "Name": "HDM, LWG, WG",
+                "Hex": "5fa9a7"
+            },
+            {
+                "Name": "HDM, MY",
+                "Hex": "37aaa7"
+            },
+            {
+                "Name": "HDM, SOC",
+                "Hex": "37aba8"
+            },
+            {
+                "Name": "LWG, WG",
+                "Hex": "b07aa1"
+            },
+            {
+                "Name": "LWG, WG, FEC",
+                "Hex": "e15759"
+            }
+        ]
+    }]
+}
