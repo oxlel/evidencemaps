@@ -1,0 +1,70 @@
+{
+    "Name": "Mosquito Map",
+    "Description": "Enter description here",
+    "Publication": "Enter reference here",
+    "Projection": "standard",
+    "DisplayMode": "cluster",
+    "DisplayUnit": "Legend",
+    "ClusterDistance": 500,
+    "MapCentre": [0, 25],
+    "MapZoomLevel": 1,
+    "MaxPieSize": 15,
+    "BaseLayers": [{
+        "File": "world50",
+        "Name": "Countries",
+        "Description": "Political boundaries at 50m resolution."
+    }],
+    "Fields": [{
+            "Column": "Country",
+            "Name": "Country",
+            "DataType": "string",
+            "Description": "Country where the instance was observed"
+        },
+        {
+            "Column": "Year",
+            "Name": "Publication Year",
+            "DataType": "float",
+            "Description": "Year of publication"
+        }
+    ],
+    "Logos": [
+    {
+        "File": "oxford",
+        "Name": "University of Oxford",
+        "ExternalUrl": "https://ox.ac.uk"
+    }],
+    "DataPalettes": [{
+        "Column": "Legend",
+        "Palette": [
+            { "Name": "Aedes aegypti", "Hex": "FFFF00"},
+            { "Name": "Aedes aegypti", "Hex": "" },
+            { "Name": "Aedes albopictus", "Hex": "" },
+            { "Name": "Aedes cantator", "Hex": "" },
+            { "Name": "Aedes cantator ", "Hex": "" },
+            { "Name": "Aedes cinereus", "Hex": "" },
+            { "Name": "Aedes communis", "Hex": "" },
+            { "Name": "Aedes communis ", "Hex": "" },
+            { "Name": "Aedes fitchii", "Hex": "" },
+            { "Name": "Aedes provocans", "Hex": "" },
+            { "Name": "Aedes sollicitans", "Hex": "" },
+            { "Name": "Aedes triseriatus", "Hex": "" },
+            { "Name": "Aedes vexans", "Hex": "" },
+            { "Name": "Aedes vexans ", "Hex": "" },
+            { "Name": "Anopheles arabiensis", "Hex": "" },
+            { "Name": "Anopheles gambiae", "Hex": "" },
+            { "Name": "Anopheles sergentii", "Hex": "" },
+            { "Name": "Anopheles sergentii ", "Hex": "" },
+            { "Name": "Coquillettidia species", "Hex": "" },
+            { "Name": "Culex pipiens", "Hex": "" },
+            { "Name": "Culex pipiens ", "Hex": "" },
+            { "Name": "Culex pipiens pallens", "Hex": "" },
+            { "Name": "Culex restuans", "Hex": "" },
+            { "Name": "Culiseta species", "Hex": "" },
+            { "Name": "Mansonia species", "Hex": "" },
+            { "Name": "Other Aedes species", "Hex": "" },
+            { "Name": "Other Anopheles species", "Hex": "" },
+            { "Name": "Other Culex species", "Hex": "" },
+            { "Name": "Other species of mosquitoes", "Hex": "" }
+        ]
+    }]
+}
