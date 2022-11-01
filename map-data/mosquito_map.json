@@ -8,7 +8,7 @@
     "ClusterDistance": 500,
     "MapCentre": [0, 25],
     "MapZoomLevel": 1,
-    "MaxPieSize": 5,
+    "MaxPieSize": 30,
     "BaseLayers": [{
         "File": "world50",
         "Name": "Countries",
