@@ -1,6 +1,6 @@
 {
-    "Name": "Instances of mosquitoes feeding on plant nectar",
-    "Description": "A systematic map of different species of mosquitoes feeding on plant nectar. A total of 384 instances of 74 species of mosquitoes feeding on 156 species and 6 genera of different plants were identified in the selected articles. Each instance contains information about the year, location, plant family where mosquitoes feed on, methodological approach, reasons for the selection of plants and purposes of the studies",
+    "Name": "Records of mosquitoes feeding on plant nectar",
+    "Description": "A systematic map of different species of mosquitoes feeding on plant nectar. A total of 384 records of 74 species of mosquitoes feeding on 156 species and 6 genera of different plants were identified in the selected articles. Each instance contains information about the year, location, plant family where mosquitoes feed on, methodological approach, reasons for the selection of plants and purposes of the studies",
     "Publication": "Enter reference here",
     "Projection": "standard",
     "DisplayMode": "cluster",
@@ -8,23 +8,22 @@
     "ClusterDistance": 500,
     "MapCentre": [0, 25],
     "MapZoomLevel": 1,
-    "MaxPieSize": 30,
+    "MaxPieSize": 121,
     "BaseLayers": [{
         "File": "world50",
         "Name": "Countries",
         "Description": "Political boundaries at 50m resolution."
     }],
     "Fields": [{
-            "Column": "Sex",
-            "Name": "Mosquito sex",
-            "DataType": "string",
-            "Description": "Sex of the mosquito feeding on nectar"
-        },
-        {
             "Column": "Country",
             "Name": "Geographic location",
             "DataType": "string",
             "Description": "Location where the instance was observed"
+        }, {
+            "Column": "Main species of mosquitoes",
+            "Name": "Main species of mosquitoes",
+            "DataType": "string",
+            "Description": "The main species assessed in the study"
         },
         {
             "Column": "Year",
@@ -55,48 +54,114 @@
             "Name": "Purposes of the study",
             "DataType": "string",
             "Description": "Main objectives of the study"
-      }],
-    "Logos": [
-    {
-        "File": "ox-biol",
-        "Name": "Department of Biology",
-        "ExternalUrl": "https://www.biology.ox.ac.uk/"
+        }
+    ],
+    "Logos": [{
+            "File": "ox-biol",
+            "Name": "Department of Biology",
+            "ExternalUrl": "https://www.biology.ox.ac.uk/"
         },
         {
-        "File": "oxlel",
-        "Name": "Oxford Long-Term Ecology Lab",
-        "ExternalUrl": "https://oxlel.zoo.ox.ac.uk/"
+            "File": "oxlel",
+            "Name": "Oxford Long-Term Ecology Lab",
+            "ExternalUrl": "https://oxlel.zoo.ox.ac.uk/"
         },
         {
-        "File": "ivcc",
-        "Name": "Innovative Vector Control Consortium",
-        "ExternalUrl": "https://www.ivcc.com/"
-    }],
+            "File": "ivcc",
+            "Name": "Innovative Vector Control Consortium",
+            "ExternalUrl": "https://www.ivcc.com/"
+        }
+    ],
     "DataPalettes": [{
         "Column": "Main species of mosquitoes",
-        "Palette": [
-            { "Name": "Aedes aegypti", "Hex": "CC1800"},
-            { "Name": "Aedes albopictus", "Hex": "0000FF" },
-            { "Name": "Aedes canadensis", "Hex": "FF0000" },
-            { "Name": "Aedes cantator", "Hex": "60009F" },
-            { "Name": "Aedes cinereus", "Hex": "FF5800" },
-            { "Name": "Aedes communis", "Hex": "BFD400" },
-            { "Name": "Aedes provocans", "Hex": "789900" },
-            { "Name": "Aedes sollicitans", "Hex": "FFCCED" },
-            { "Name": "Aedes sticticus", "Hex": "CCAA00" },
-            { "Name": "Aedes stimulans", "Hex": "FFCC99" },
-            { "Name": "Aedes vexans", "Hex": "FFD100" },
-            { "Name": "Anopheles gambiae", "Hex": "665C00" },
-            { "Name": "Anopheles sergentii", "Hex": "CCCCFF" },
-            { "Name": "Coquillettidia spp", "Hex": "FFFCCC" },
-            { "Name": "Culex pipiens", "Hex": "FF00CF" },
-            { "Name": "Culex restuans", "Hex": "660000" },
-            { "Name": "Culiseta spp", "Hex": "99DDFF" },
-            { "Name": "Mansonia spp", "Hex": "020066" },
-            { "Name": "Other Aedes species", "Hex": "CCFFFC" },
-            { "Name": "Other Anopheles species", "Hex": "BC99FF" },
-            { "Name": "Other Culex species", "Hex": "006600" },
-            { "Name": "Other species of mosquitoes", "Hex": "FFA233" }
+        "Palette": [{
+                "Name": "Aedes aegypti",
+                "Hex": "CC1800"
+            },
+            {
+                "Name": "Aedes albopictus",
+                "Hex": "0000FF"
+            },
+            {
+                "Name": "Aedes canadensis",
+                "Hex": "FF0000"
+            },
+            {
+                "Name": "Aedes cantator",
+                "Hex": "60009F"
+            },
+            {
+                "Name": "Aedes cinereus",
+                "Hex": "FF5800"
+            },
+            {
+                "Name": "Aedes communis",
+                "Hex": "BFD400"
+            },
+            {
+                "Name": "Aedes provocans",
+                "Hex": "789900"
+            },
+            {
+                "Name": "Aedes sollicitans",
+                "Hex": "FFCCED"
+            },
+            {
+                "Name": "Aedes sticticus",
+                "Hex": "CCAA00"
+            },
+            {
+                "Name": "Aedes stimulans",
+                "Hex": "FFCC99"
+            },
+            {
+                "Name": "Aedes vexans",
+                "Hex": "FFD100"
+            },
+            {
+                "Name": "Anopheles gambiae",
+                "Hex": "665C00"
+            },
+            {
+                "Name": "Anopheles sergentii",
+                "Hex": "CCCCFF"
+            },
+            {
+                "Name": "Coquillettidia spp",
+                "Hex": "FFFCCC"
+            },
+            {
+                "Name": "Culex pipiens",
+                "Hex": "FF00CF"
+            },
+            {
+                "Name": "Culex restuans",
+                "Hex": "660000"
+            },
+            {
+                "Name": "Culiseta spp",
+                "Hex": "99DDFF"
+            },
+            {
+                "Name": "Mansonia spp",
+                "Hex": "020066"
+            },
+            {
+                "Name": "Other Aedes species",
+                "Hex": "CCFFFC"
+            },
+            {
+                "Name": "Other Anopheles species",
+                "Hex": "BC99FF"
+            },
+            {
+                "Name": "Other Culex species",
+                "Hex": "006600"
+            },
+            {
+                "Name": "Other species of mosquitoes",
+                "Hex": "FFA233"
+            }
         ]
     }]
 }
