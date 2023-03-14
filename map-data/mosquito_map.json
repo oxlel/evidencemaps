@@ -1,7 +1,8 @@
 {
     "Name": "Records of mosquitoes feeding on plant nectar",
     "Description": "A systematic map of different species of mosquitoes feeding on plant nectar. A total of 384 records of 74 species of mosquitoes feeding on 156 species and 6 genera of different plants were identified in the selected articles. Each instance contains information about the year, location, plant family where mosquitoes feed on, methodological approach, reasons for the selection of plants and purposes of the studies",
-    "Publication": "Enter reference here",
+    "Publication": "Awaiting publication",
+    "PublicationUrl": "#",
     "Projection": "standard",
     "DisplayMode": "cluster",
     "DisplayUnit": "Main species of mosquitoes",
