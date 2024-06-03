@@ -5,24 +5,24 @@
     "PublicationUrl": "#",
     "Projection": "standard",
     "DisplayMode": "cluster",
-    "DisplayUnit": "Main species of mosquitoes",
+    "DisplayUnit": "Mosquito Species (grouping)",
     "ClusterDistance": 500,
     "MapCentre": [0, 25],
     "MapZoomLevel": 1,
-    "MaxPieSize": 121,
+    "MaxPieSize": 176,
     "BaseLayers": [{
         "File": "world50",
         "Name": "Countries",
         "Description": "Political boundaries at 50m resolution."
     }],
     "Fields": [{
-            "Column": "Country",
+            "Column": "Country of the study",
             "Name": "Geographic location",
             "DataType": "string",
             "Description": "Location where the record was observed"
         }, {
-            "Column": "Main species of mosquitoes",
-            "Name": "Main species of mosquitoes",
+            "Column": "Mosquito species",
+            "Name": "Main species of mosquito(es)",
             "DataType": "string",
             "Description": "The main species assessed in the study"
         },
@@ -33,28 +33,76 @@
             "Description": "Year of publication"
         },
         {
-            "Column": "Plant family",
-            "Name": "Plant family",
+            "Column": "Plant Species",
+            "Name": "Plant - Species",
+            "DataType": "string",
+            "Description": "Species of plants where mosquitoes feed on"
+        },
+        {
+            "Column": "Plant Genus",
+            "Name": "Plant - Genera",
+            "DataType": "string",
+            "Description": "Genera of plants where mosquitoes feed on"
+        },
+        {
+            "Column": "Plant Family",
+            "Name": "Plant - Families",
             "DataType": "string",
             "Description": "Family of plants where mosquitoes feed on"
         },
         {
-            "Column": "Selection of plants",
-            "Name": "Selection of plants",
+            "Column": "Reason of plant selection",
+            "Name": "Reason of plant selection",
             "DataType": "string",
             "Description": "Reasons for the selection of the plants in the study"
         },
         {
-            "Column": "Methodology",
+            "Column": "Methodology approach",
             "Name": "Methodological approach",
             "DataType": "string",
             "Description": "Conditions under which the study was conducted"
         },
         {
-            "Column": "Purposes of the study",
-            "Name": "Purposes of the study",
+            "Column": "Observation/experimental design",
+            "Name": "Design of observation / experimentation",
             "DataType": "string",
-            "Description": "Main objectives of the study"
+            "Description": "The study design"
+        },
+        {
+            "Column": "Measurements",
+            "Name": "Measurements taken",
+            "DataType": "string",
+            "Description": "The outcome measures used to infer mosquito - plant interactions."
+        },
+        {
+            "Column": "General purpose of the study",
+            "Name": "General purpose of the study",
+            "DataType": "string",
+            "Description": "The stated purpose for completing the analysis."
+        },
+        {
+            "Column": "Rick of bias of the study",
+            "Name": "Assessment of Risk of Bias",
+            "DataType": "string",
+            "Description": "Whether the method used suggests low or high risk of bias, according to the method in our manuscript."
+        },
+        {
+            "Column": "Year",
+            "Name": "Year of Publication",
+            "DataType": "float",
+            "Description": "Whether the method used suggests low or high risk of bias, according to the method in our manuscript."
+        },
+        {
+            "Column": "Replicates",
+            "Name": "Number of Replicates",
+            "DataType": "float",
+            "Description": "The number of replicate analyses performed."
+        },
+        {
+            "Column": "Number of species of plant studied",
+            "Name": "Number of species of plant studied",
+            "DataType": "float",
+            "Description": "The number of species of plants studied within a single sampling design / experiment."
         }
     ],
     "Logos": [{
@@ -74,95 +122,29 @@
         }
     ],
     "DataPalettes": [{
-        "Column": "Main species of mosquitoes",
-        "Palette": [{
-                "Name": "Aedes aegypti",
-                "Hex": "CC1800"
-            },
-            {
-                "Name": "Aedes albopictus",
-                "Hex": "0000FF"
-            },
-            {
-                "Name": "Aedes canadensis",
-                "Hex": "FF0000"
-            },
-            {
-                "Name": "Aedes cantator",
-                "Hex": "60009F"
-            },
-            {
-                "Name": "Aedes cinereus",
-                "Hex": "FF5800"
-            },
-            {
-                "Name": "Aedes communis",
-                "Hex": "BFD400"
-            },
-            {
-                "Name": "Aedes provocans",
-                "Hex": "789900"
-            },
-            {
-                "Name": "Aedes sollicitans",
-                "Hex": "FFCCED"
-            },
-            {
-                "Name": "Aedes sticticus",
-                "Hex": "CCAA00"
-            },
-            {
-                "Name": "Aedes stimulans",
-                "Hex": "FFCC99"
-            },
-            {
-                "Name": "Aedes vexans",
-                "Hex": "FFD100"
-            },
-            {
-                "Name": "Anopheles gambiae",
-                "Hex": "665C00"
-            },
-            {
-                "Name": "Anopheles sergentii",
-                "Hex": "CCCCFF"
-            },
-            {
-                "Name": "Coquillettidia spp",
-                "Hex": "FFFCCC"
-            },
-            {
-                "Name": "Culex pipiens",
-                "Hex": "FF00CF"
-            },
-            {
-                "Name": "Culex restuans",
-                "Hex": "660000"
-            },
-            {
-                "Name": "Culiseta spp",
-                "Hex": "99DDFF"
-            },
-            {
-                "Name": "Mansonia spp",
-                "Hex": "020066"
-            },
-            {
-                "Name": "Other Aedes species",
-                "Hex": "CCFFFC"
-            },
-            {
-                "Name": "Other Anopheles species",
-                "Hex": "BC99FF"
-            },
-            {
-                "Name": "Other Culex species",
-                "Hex": "006600"
-            },
-            {
-                "Name": "Other species of mosquitoes",
-                "Hex": "FFA233"
-            }
+        "Column": "Mosquito Species (grouping)",
+        "Palette": [
+            { "Name": "Aedes aegypti", "Hex": "59a89c" },
+            { "Name": "Aedes albopictus", "Hex": "5ab3a7" },
+            { "Name": "Aedes cantator", "Hex": "5bbdb3" },
+            { "Name": "Aedes cinereus", "Hex": "5bc8be" },
+            { "Name": "Aedes communis", "Hex": "5ad3cb" },
+            { "Name": "Aedes provocans", "Hex": "59ded7" },
+            { "Name": "Aedes sollicitans", "Hex": "58e9e4" },
+            { "Name": "Aedes trivittatus", "Hex": "55f4f1" },
+            { "Name": "Aedes vexans", "Hex": "52ffff" },
+            { "Name": "Other Aedes species", "Hex": "004c3e" },
+            { "Name": "Anopheles arabiensis", "Hex": "e02b35" },
+            { "Name": "Anopheles gambiae", "Hex": "ed5f56" },
+            { "Name": "Anopheles sergentii", "Hex": "f8887a" },
+            { "Name": "Other Anopheles species", "Hex": "ffada0" },
+            { "Name": "Coquillettidia species", "Hex": "a559aa" },
+            { "Name": "Culex pipiens", "Hex": "f0c571" },
+            { "Name": "Culex restuans", "Hex": "c59b3f" },
+            { "Name": "Other Culex species", "Hex": "9a7300" },
+            { "Name": "Culiseta species", "Hex": "cecece" },
+            { "Name": "Mansonia species", "Hex": "082a54" },
+            { "Name": "Other mosquito species", "Hex": "ffffff" }
         ]
     }]
 }
